@@ -2430,12 +2430,14 @@ class t_ZoomRoiLogic(ScriptedLoadableModuleLogic):
             self.dirList.sort()
             self.inputDirectoryExtension = self.retrieveExtension(self.inputDirectory, self.dirList) 
             self.dirList = self.cleanList(self.inputDirectory, self.dirList, self.inputDirectoryExtension)
+            self.sizeZImageInputOrigin = len(self.dirList)
             print("dirList[0] = ", self.dirList[0])
             print("dirList[0] = ", self.inputDirectory + "/" + self.dirList[0])
             imageInputOrigin = sitk.ReadImage(self.inputDirectory + "/" + self.dirList[0])
-            self.sizeImageInputOrigin = imageInputOrigin.GetSize() 
+            self.sizeImageInputOrigin = imageInputOrigin.GetSize()
+            print("self.sizeImageInputOrigin = ", self.sizeImageInputOrigin)       
             print("self.sizeZImageInputOrigin = ", self.sizeZImageInputOrigin)        
-            print("self.sizeImageInputOrigin = ", self.sizeImageInputOrigin)            
+                
         except Exception as e:
             print("Can't read input Origin image", str(e))
     
