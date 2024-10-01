@@ -1,4 +1,7 @@
 # extension3DSlicer
+
+[![DOI](https://zenodo.org/badge/863987968.svg)](https://doi.org/10.5281/zenodo.13871319)
+
 This extension of 3D Slicer was created as part of my M2 internship in Computer Science for Image and Sound at LaBRI and I2M
 
 ## Name
