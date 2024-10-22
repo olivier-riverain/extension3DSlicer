@@ -138,9 +138,27 @@ click on the three small dots and select the folder containing the C++ executabl
 
 ![Create a 3D file](images/create_2D_to_3D.png  "Creatye a 3D file")
 
+- click on the three little dots and select the input directory containing all the slices
+
+- choose the interval of the slices using the two cursors
+
+- choose the reduction factor using the cursor, the value applies to each of the three dimensions of the file
+
+- click on the three little dots to define a file name for the 3D file that will be built, for example path/filename.nrrd where nrrd is the desired format
+
+- Output Info displays the dimensions and size of the future 3D file
+
+- finally click on the Create 3D resized file button to create the 3D file
+
 ### Display a 3D file
 
 ![ Display a 3D file](images/load_file_nrrd.png  " Display a 3D file")
+
+- click on the three little dots to select a 3D file
+
+- click on the Add file button to display the 3D file
+
+For example, you can see this.
 
 ![ Display a 3D file](images/display_file_nrrd.png  " Display a 3D file")
 
@@ -148,13 +166,33 @@ click on the three small dots and select the folder containing the C++ executabl
 
 ![Create an area of interest](images/roi_interface_01.png  "Create an area of interest")
 
+- first you must display a 3D file and select the input directory containing the slicers
+
+- activate the creation of the area of ​​interest by clicking on the second button from the left on the line of buttons
+
+- holding down the left mouse button and with the help of the mouse create the area of ​​interest, then release the left mouse button
+
+- by clicking on the central point of the area and holding down the left mouse button, you can move the area, the values ​​of X, Y and Z correspond to the coordinates of the center
+
+- by clicking on one of the points delimiting the area you can change the size of the area, size X, size Y and size Z display the size in pixels of the area
+
+- the square radio button allows you to set size X and size Y to the same value, cube allows you to set size X, size Y and size Z to the same value to obtain a cube-shaped area of ​​interest
+
+- click on the three little dots to define an output file name for the 3D file that will be built, for example path/filename.nrrd where nrrd is the desired format
+
+- finally, click on Create ROI to create the 3D file corresponding to the constructed area of ​​interest
+
 ![Create an area of interest](images/roi_vues_01.png  "Create an area of interest")
+
+For example, you can obtain this.
 
 ![Create an area of interest](images/roi_presentation_resultat.png  "Create an area of interest")
 
 
 
 ### Navigate through the different acquisition resolutions
+
+
 
 ![Navigate through the different acquisition resolutions](images/zoom00.png  "Navigate through the different acquisition resolutions")
 
