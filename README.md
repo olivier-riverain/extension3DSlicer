@@ -184,9 +184,9 @@ For example, you can see this.
 
 ![Create an area of interest](images/roi_vues_01.png  "Create an area of interest")
 
-For example, you can obtain this.
+For example, if you display the 3D file, you can obtain this.
 
-![Create an area of interest](images/roi_presentation_resultat.png  "Create an area of interest")
+![Result of Create an area of interest](images/roi_presentation_resultat.png  "Result of Create an area of interest")
 
 
 
@@ -212,15 +212,41 @@ For example, you can obtain this.
 
 ### Compute and display a density profile
 
-![Compute and display a density profile](images/profil_exemple_vue_3dslicer.png  "Compute and display a density profile")
+First, you need to display a 3D file as in **Display a 3D file**, either by having created it as in **Create a 3D file**, or by having created an area of ​​interest as in **Create an area of interest**.
+
+![Select origin and destination](images/profil_exemple_vue_3dslicer.png  "Select origin and destination")
 
 ![Compute and display a density profile](images/profil_interface.png  "Compute and display a density profile")
+
+- Origin point: activate the creation of this point by clicking on the second button from the left on the line of buttons,  holding down the left mouse button and with the help of the mouse create the area for the origin point, then release the left mouse button. You can move this point by clicking on the center of the area and moving the mouse. X, Y and Z display the coordinates.
+
+- End Point: same as for origin point.
+
+- you can choose between a normal vector or a direction vector. For now, the calculation of a normal vector has not been implemented yet.
+
+- you can select a calculation based on the mean, median, minimum and maximum for the neighborhood area
+
+- block means that the neighborhood takes the form of a cube (3D), orthogonal plane determines a 2D plane perpendicular to a point
+
+- the value of the neighborhood distance is determined by the slider
+
+- the number of points to calculate in the profile is determined by the cursor. If we set this value to 0 then the maximum number of possible points is taken into account
+
+- click on the three little dots to define an output file name to save the coordinates and levels of density, you can choose a file with extension .txt
+
+- finally, click on Profile. The profile will be displayed just under the Display profile button.
+
+- you can load a profile file by clicking on the three little dots of Profile file and click on the Display profile button
+
+- you can save the profile image by clicking on Save Profile
+
+Here are some examples of profiles.
 
 ![density profile d0](images/profile_exemple_d0.png  "profile d0")
 
 ![density profile mean](images/profile_exemple_mean_ortho_d3.png  "density profile mean")
 
-![density profile med](images/profile_exemple_med_ortho_d3.png  "density profile med")
+![density profile median](images/profile_exemple_med_ortho_d3.png  "density profile median")
 
 ![density profile min](images/profile_exemple_min_ortho_d3.png  "density profile min")
 
