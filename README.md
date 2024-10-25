@@ -196,19 +196,31 @@ For example, if you display the 3D file, you can obtain this.
 
 ![Navigate through the different acquisition resolutions](images/zoom00.png  "Navigate through the different acquisition resolutions")
 
-![Navigate through the different acquisition resolutions](images/zoom01.png  "Navigate through the different acquisition resolutions")
+If you want to display the areas you must first create a json file in the directory containing all the images. This file must be named nameofthedirectory.json and contain information about the different resolutions, see the example images. Be careful, if you copy the image folder to another computer you must modify the path in the json file.
 
-![Navigate through the different acquisition resolutions](images/zoom_json.png  "Navigate through the different acquisition resolutions")
+![Structure of the json file](images/zoom_json.png  "Structure of the json file")
 
-![Navigate through the different acquisition resolutions](images/zoom_aff_8um.png  "Navigate through the different acquisition resolutions")
+![Example of the content of the json file](images/content_of_json.png  "Example of the content of the json file")
 
-![Navigate through the different acquisition resolutions](images/zoom_int_8um.png  "Navigate through the different acquisition resolutions")
+When you click on the Display Zoom Area box, you can see the list of available 8um areas and their display in the different views.
 
-![Navigate through the different acquisition resolutions](images/zoom_aff_zone8_04.png  "Navigate through the different acquisition resolutions")
+![Display zoom area](images/zoom01.png  "Display zoom area")
 
-![Navigate through the different acquisition resolutions](images/zoom_int_2um.png  "Navigate through the different acquisition resolutions")
+When you click on one of the items in the list, the display focuses on this area.
 
-![Navigate through the different acquisition resolutions](images/zoom_aff_zone8_04_2um.png  "Navigate through the different acquisition resolutions")
+![Select an item](images/zoom_int_8um.png  "Select an item")
+
+![Display zoom area](images/zoom_aff_8um.png  "Display zoom area")
+
+If you click on the Zoom button, a temporary 3D file of the area is created and displayed in the views.
+
+![Display zoom area](images/zoom_aff_zone8_04.png  "Display zoom area")
+
+You can also do the same for a 2um area.
+
+![Select an item](images/zoom_int_2um.png  "Select an item")
+
+![Display zoom area](images/zoom_aff_zone8_04_2um.png  "Display zoom area")
 
 ### Compute and display a density profile
 
@@ -227,6 +239,8 @@ First, you need to display a 3D file as in **Display a 3D file**, either by havi
 - you can select a calculation based on the mean, median, minimum and maximum for the neighborhood area
 
 - block means that the neighborhood takes the form of a cube (3D), orthogonal plane determines a 2D plane perpendicular to a point
+
+![density profile d0](images/schema_calcul_profil.png  "profile d0")
 
 - the value of the neighborhood distance is determined by the slider
 
