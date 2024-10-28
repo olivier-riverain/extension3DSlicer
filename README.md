@@ -13,6 +13,8 @@ RIVERAIN Olivier
 ## Description
 Master 2 Internship in Computer Science for Image and Sound supervised by Fabien Baldacci (LaBRI), Louise Le Barbenchon (I2M) and Anne Vialard (LaBRI).
 
+Development of a 3D Slicer extension in python and C++. Implementation of parallelization on all computer cores to accelerate the speed of decompression and loading of large images acquired within the Grenoble synchrotron. Conversion of 2D slices into 3D images. Creation of regions of interest by the user. Navigation in several acquisition resolutions. Creation and display of a density profile with calculation of the mean, median, minimum, maximum by taking into account a neighborhood in the form of a block or an orthogonal plane.
+
 ## Installing 3D Slicer
 
 https://slicer.readthedocs.io/en/latest/user_guide/getting_started.html#installing-3d-slicer
@@ -51,6 +53,7 @@ sudo apt install cmake libinsighttoolkit5-dev libmagick++-6.q16-dev python3-nump
 ### Installing under macOS
 
 ```sh
+xcode-select --install
 brew install cmake
 brew install itk
 brew install imagemagick
@@ -59,7 +62,7 @@ pip3 install numpy matplotlib
 
 ### Installing under windows
 
-installing python and pip from https://www.python.org/downloads/windows/
+**Installing python and pip** from https://www.python.org/downloads/windows/
 
 ```sh
 pip install numpy matplotlib
@@ -75,7 +78,7 @@ add  C:\mingw64\bin to the path in the environment variables
 
 open powershell and type g++ --version and you can see
 
- ![Test if mingw-64 is installed](/images/testmingw64installed.png  "[Test if mingw-64 is installed")
+ ![Test if mingw-64 is installed](images/testmingw64installed.png  "[Test if mingw-64 is installed")
 
 installing itk from https://docs.itk.org/en/latest/download.html 
 
@@ -83,18 +86,36 @@ extract in C:\ it creates the directory InsightToolkit-5.3.0
 
 -->
 
+**Installing cmake** from https://cmake.org/download/
 
-installing visual studio community from https://visualstudio.microsoft.com/fr/downloads/ with Desktop development C++ workload, https://learn.microsoft.com/fr-fr/cpp/build/vscpp-step-0-installation?view=msvc-170
+**Installing ImageMagick** from https://imagemagick.org/script/download.php
 
-compiling itk
+During installation check the following cases
+
+ ![Imagemagick](images/installing_imagemagick.png  "Imagemagick")
+
+
+**Installing ITK**
+
+Download itk from https://docs.itk.org/en/latest/download.html 
+
+Extract in C:\ it creates the directory InsightToolkit-5.3.0
+
+There is no installer for ITK. So it has to be compiled manually. The documentation says to use the cl.exe compiler provided by Visual Studio.
+
+Installing visual studio community from https://visualstudio.microsoft.com/fr/downloads/ with Desktop development C++ workload, https://learn.microsoft.com/fr-fr/cpp/build/vscpp-step-0-installation?view=msvc-170
+
+Compiling ITK
 
 ```sh
 cd InsightToolkit-5.3.0
 mkdir build
 cd build
-cmake -G "MinGW Makefiles" ..
-mingw32-make
+
 ```
+<!-- cmake -G "MinGW Makefiles" ..
+mingw32-make -->
+todo
 
 ## Compile programs in C++
 
@@ -131,7 +152,7 @@ todo
 
 ![Bind C++ programs to extension](images/bind_programs_to_extension.png  "Bind C++ programs to extension")
 
-click on the three small dots and select the folder containing the C++ executable files
+Click on the three small dots and select the folder containing the C++ executable files.
 
 
 ### Create a 3D file
