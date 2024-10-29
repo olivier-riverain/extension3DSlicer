@@ -117,6 +117,8 @@ cd build
 mingw32-make -->
 todo
 
+Create an environment variable HOME with the value C:\citrusSkin.  Don't forget to create the citrusSkin folder first.
+
 ## Compile programs in C++
 
 ### Under Linux and macOS
@@ -145,6 +147,8 @@ todo
 
 
 [Tutorial to install an extension in 3D Slicer] (https://www.youtube.com/watch?v=QsxzjQb05D4)
+
+For now this extension has been tested for Linux. For macOS, I don't have an Apple computer, I'm waiting for feedback from users. For Windows, the extension needs to be modified to take into account the specificities of Windows.
 
 ## Tutorials
 
