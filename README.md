@@ -110,14 +110,47 @@ Compiling ITK
 ```sh
 cd InsightToolkit-5.3.0
 mkdir build
-cd build
-
 ```
 <!-- cmake -G "MinGW Makefiles" ..
 mingw32-make -->
-todo
 
-Create an environment variable HOME with the value C:\citrusSkin.  Don't forget to create the citrusSkin folder first.
+Run CMake gui.
+
+Select the folder containing the ITK sources using Browse Source, here C:/InsightToolkit-5.3.0.
+
+Select the build folder using Browse Build, here C:\InsightToolkit-5.3.0/build.
+
+Click the Configure button.
+
+![CMake configuration](images/itk_cmake-gui_01.png  "[CMake configuration")
+
+Choose Visual Studio 17 2022.
+
+Click the Finish button.
+
+![CMake configuration](images/itk_cmake-gui_02.png  "CMake configuration")
+
+After a few minutes, you see this.
+
+![CMake configuration](images/itk_cmake-gui_03.png  "CMake configuration")
+
+Click the Generate button and you see this.
+
+![CMake configuration](images/itk_cmake-gui_04.png  "CMake configuration")
+
+Click the Open Project button.
+
+In Visual Studio, go to the Generate menu -> Build -> 0 ALL_Build to compile the ITK library.
+
+![Visual Studio](images/itk_vs_build_01.png  "Visual Studio")
+
+The ITK library is compiled.
+
+![Visual Studio](images/itk_vs_build_02.png  "Visual Studio")
+
+todo (voir s'il faut ajouter le chemin vers build dans variable environnement PATH)
+
+**Create an environment variable HOME** with the value C:\citrusSkin.  Don't forget to create the citrusSkin folder first.
 
 ## Compile programs in C++
 
@@ -142,6 +175,16 @@ cp ../applyMask.py .
 
 ### Under Windows
 todo
+
+```sh
+cd programs
+
+mkdir build
+
+cd build
+
+
+```
 
 ## Installing extension in 3D Slicer
 
