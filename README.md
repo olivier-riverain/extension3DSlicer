@@ -189,8 +189,6 @@ cd build
 ## Installing extension in 3D Slicer
 
 
-[Tutorial to install an extension in 3D Slicer] (https://www.youtube.com/watch?v=QsxzjQb05D4)
-
 [Tutorial to install this extension in 3D Slicer] (https://youtu.be/jbea2kZqlYo)
 
 For now this extension has been tested for Linux. For macOS, I don't have an Apple computer, I'm waiting for feedback from users. For Windows, the extension needs to be modified to take into account the specificities of Windows.

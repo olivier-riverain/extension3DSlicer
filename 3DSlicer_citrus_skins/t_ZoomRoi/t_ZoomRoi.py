@@ -30,7 +30,7 @@ import subprocess
 import qt
 import json
 import math
-from pylab import *
+#from pylab import *
 import shutil
 
 # end Olivier
